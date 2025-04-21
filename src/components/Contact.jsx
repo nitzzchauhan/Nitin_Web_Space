@@ -2,7 +2,7 @@ import { Mail, Phone, Linkedin, Github, FileDown } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-20 px-6 bg-[#0e0d1b] text-white text-center">
+    <section id="contact" className="py-20 px-6 bg-[#0e0d1b] text-white text-center">
       <h2 className="text-4xl font-bold mb-10 bg-gradient-to-r from-blue-400 via-pink-400 to-orange-400 text-transparent bg-clip-text">
         Contact Me
       </h2>

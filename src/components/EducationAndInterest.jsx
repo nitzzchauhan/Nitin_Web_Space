@@ -55,7 +55,7 @@ const interests = [
 
 const EducationAndInterests = () => {
   return (
-    <section className="bg-[#1a1f2e] text-white py-16 px-6 md:px-20">
+    <section id="education" className="bg-[#1a1f2e] text-white py-16 px-6 md:px-20">
       {/* Education Section */}
       <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
         <img
@@ -84,7 +84,7 @@ const EducationAndInterests = () => {
       </div>
 
       {/* Strengths & Interests Section */}
-      <div>
+      <div id="strengths">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-orange-300 text-transparent bg-clip-text mb-10 text-center">
           Strengths & Interests
         </h2>
