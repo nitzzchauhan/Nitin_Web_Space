@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col  lg:flex-row items-center justify-center min-h-screen bg-[#0e0d1b] text-white px-6 py-16">
       {/* Left Section - Text Content */}
-      <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
+      <div className="lg:w-1/2 space-y-6 text-center lg:text-left lg:ml-50 lg:ml-36">
         <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-pink-400 to-orange-400 text-transparent bg-clip-text leading-tight">
           Nitin Chauhan – Software Engineer <br />
           and Data Scientist
@@ -31,7 +31,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right Section - Image */}
-      <div className="lg:w-1/2 mt-0 lg:mt-0 flex justify-center">
+      <div className="lg:w-1/2 mt-0 lg:mt-0 flex justify-center sm:mt-5">
         <img
           src="/images/nn.png" // <-- change to actual image path in public folder
           alt="Nitin Chauhan"
