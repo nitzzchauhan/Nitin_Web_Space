@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-[#0e0d1b] shadow-md">
+    <nav className="fixed w-full z-50 bg-[#0e0d1b] shadow-md hover:scale-105 transition">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         {/* Logo or Name */}
         <a
