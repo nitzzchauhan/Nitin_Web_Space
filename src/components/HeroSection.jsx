@@ -1,16 +1,18 @@
-import React from 'react';
+import React from "react";
 
 const HeroSection = () => {
   return (
     <div className="flex flex-col  lg:flex-row items-center justify-center min-h-screen bg-[#0e0d1b] text-white px-6 py-16">
       {/* Left Section - Text Content */}
       <div className="lg:w-1/2 space-y-6 text-center lg:text-left lg:ml-50 lg:ml-36">
-        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-pink-400 to-orange-400 text-transparent bg-clip-text leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-pink-400 to-orange-400 text-transparent bg-clip-text leading-tight animate-slideIn">
           Nitin Chauhan – Software Engineer <br />
           and Data Scientist
         </h1>
+
         <p className="text-lg text-gray-300 max-w-xl mx-auto lg:mx-0">
-          Building scalable web applications and delivering hands-on training in data science and software engineering.
+          Building scalable web applications and delivering hands-on training in
+          data science and software engineering.
         </p>
 
         <div className="flex justify-center lg:justify-start gap-4 flex-wrap">

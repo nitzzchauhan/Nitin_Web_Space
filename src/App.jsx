@@ -5,6 +5,7 @@ import Contact from './components/Contact'
 import Projects from './components/Projects'
 import EducationAndInterests from './components/EducationAndInterest'
 import Navbar from './components/Navbar'
+import TestimonialCarousel from './components/TestimonialCarousel'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       <HeroSection />
       <About />
+      <TestimonialCarousel/>
       <Experience />
       <Projects />
       <EducationAndInterests />
