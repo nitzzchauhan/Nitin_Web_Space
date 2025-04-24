@@ -1,7 +1,10 @@
 import React from "react";
+import SplashCursor from "../blocks/Animations/SplashCursor/SplashCursor";
 
 const HeroSection = () => {
   return (
+    <>
+      <SplashCursor />
     <div className="flex flex-col  lg:flex-row items-center justify-center min-h-screen bg-[#0e0d1b] text-white px-6 py-16">
       {/* Left Section - Text Content */}
       <div className="lg:w-1/2 space-y-6 text-center lg:text-left lg:ml-50 lg:ml-36">
@@ -41,6 +44,7 @@ const HeroSection = () => {
         />
       </div>
     </div>
+    </>
   );
 };
 
