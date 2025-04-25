@@ -5,3 +5,6 @@
 body {
   @apply font-sans;
 }
+body{
+  background-color: black;
+}

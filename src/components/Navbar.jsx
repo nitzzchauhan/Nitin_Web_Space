@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import SplashCursor from "../blocks/Animations/SplashCursor/SplashCursor";
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +16,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full z-50 bg-[#0e0d1b] shadow-md hover:scale-105 transition">
+    
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         {/* Logo or Name */}
         <a
