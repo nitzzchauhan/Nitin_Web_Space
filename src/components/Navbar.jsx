@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: "Education", href: "#education" },
     { name: "Strengths", href: "#strengths" },
     { name: "Contact", href: "#contact" },
+    { name: "Studnet Corner", href: "studentcorner" },
   ];
 
   return (

@@ -20,11 +20,11 @@ const StudentCorner = () => {
           📘 Download DSA Guide
         </a>
         <a
-          href="https://github.com/nitzzchauhan"
+          href="https://github.com/nitzzchauhan/Projects/tree/main/JS/interview%20question"
           className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-black px-6 py-3 rounded-xl font-semibold shadow-lg hover:scale-90 transition"
           target="_blank"
         >
-          🔗 GitHub Projects
+          🔗 JavaScript Interview Questions
         </a>
         <a
           href="/resources/portfolio-template.zip"

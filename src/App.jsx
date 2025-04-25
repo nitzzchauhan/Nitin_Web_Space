@@ -11,11 +11,21 @@ import Splash from "./blocks/Animations/SplashCursor/Splash";
 import React, { useState, useEffect } from "react";
 import StudentCorner from "./pages/StudentCorner";
 
-
 function Apps() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const splashTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 800); // adjust splash duration in milliseconds
+
+    return () => clearTimeout(splashTimeout);
+  }, []);
+
+  if (loading) return <Splash />;
   return (
     <div className="font-sans text-primary" id="home">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <HeroSection />
 
@@ -39,17 +49,6 @@ function Apps() {
 // import TestimonialCarousel from "./components/TestimonialCarousel";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const splashTimeout = setTimeout(() => {
-      setLoading(false);
-    }, 800); // adjust splash duration in milliseconds
-
-    return () => clearTimeout(splashTimeout);
-  }, []);
-
-  if (loading) return <Splash />;
   return (
     <Router>
       <Navbar />
