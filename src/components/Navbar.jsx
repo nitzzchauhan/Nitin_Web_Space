@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import SplashCursor from "../blocks/Animations/SplashCursor/SplashCursor";
 
-
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const navLinks = [
     { name: "Home", href: "#home" },
@@ -12,15 +12,28 @@ const Navbar = () => {
     { name: "Education", href: "#education" },
     { name: "Strengths", href: "#strengths" },
     { name: "Contact", href: "#contact" },
-    { name: "Studnet Corner", href: "studentcorner" },
+    { name: "Student Corner", href: "/studentcorner" }, // corrected spelling + routing link
   ];
 
-  return (
-    <nav className="fixed w-full z-50 bg-[#0e0d1b] shadow-md hover:scale-105 transition">
-    
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setScrolled(offset > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
+  return (
+    <nav
+      className={`fixed w-full z-50 transition duration-300 ${
+        scrolled
+          ? "bg-black/40 backdrop-blur-md shadow-md"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        {/* Logo or Name */}
+        {/* Logo */}
         <a
           href="#home"
           className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-pink-400 to-orange-400 text-transparent bg-clip-text"
@@ -28,7 +41,7 @@ const Navbar = () => {
           Tathastu-AI
         </a>
 
-        {/* Desktop Nav Links */}
+        {/* Desktop Links */}
         <div className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <a
@@ -41,7 +54,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile Menu Toggle */}
+        {/* Mobile Menu Button */}
         <button
           className="text-white md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}

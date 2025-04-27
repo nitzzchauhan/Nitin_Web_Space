@@ -1,5 +1,7 @@
 // src/pages/StudentCorner.jsx
 import React from "react";
+import SecureImagePopup from "../components/SecureImagePopup";
+
 
 const StudentCorner = () => {
   return (
@@ -8,7 +10,8 @@ const StudentCorner = () => {
         🎓 Student Corner
       </h1>
       <p className="text-lg text-gray-300 max-w-2xl">
-        Welcome to the Student Corner – a hub for resources, notes, project links, and useful guides to support your learning journey. 🚀
+        Welcome to the Student Corner – a hub for resources, notes, project
+        links, and useful guides to support your learning journey. 🚀
       </p>
 
       <div className="mt-8 space-y-4">
@@ -33,6 +36,9 @@ const StudentCorner = () => {
         >
           🎨 Portfolio Template
         </a>
+        {/* <div className="flex justify-center">
+          <SecureImagePopup />
+        </div> */}
       </div>
     </div>
   );
