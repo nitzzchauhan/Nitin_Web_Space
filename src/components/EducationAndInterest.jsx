@@ -57,7 +57,7 @@ const EducationAndInterests = () => {
   return (
     <section id="education" className="bg-[#1a1f2e] text-white py-16 px-6 md:px-20">
       {/* Education Section */}
-      <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
+      {/* <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
         <img
           src="/images/college-campus.jpg" // Update this path
           alt="Campus"
@@ -81,7 +81,7 @@ const EducationAndInterests = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
 
       {/* Strengths & Interests Section */}
       <div id="strengths">
